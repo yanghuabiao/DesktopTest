@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="text/html charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <link rel="apple-touch-icon" href="TransitCodeIconImageData">
+    <title>TransitCodeAppTitle</title>
+</head>
+<body>
+    <a href="TransitCodeAppScheme" id="com.Dwight.AddIconToHome" style="display:none"></a>
+   <span id="msg"></span>
+</body>
+<script>
+    if (window.navigator.standalone == true) {
+       var lnk = document.getElementById("qbt").click();
+    } else {
+        document.getElementById("msg").innerHTML='<center style="position:absolute;left:0;top:0;width: 100%;height: 100%;"> <img style="z-index:1;width:100%" src="TransitCodeLaunchImageData" /> </center>';
+    }
+</script>
+</html>
+
